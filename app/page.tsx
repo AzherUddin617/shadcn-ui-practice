@@ -1,5 +1,6 @@
 import { AlertDemoComponent } from "@/components/alert-demo";
 import { CalendarDemo } from "@/components/calendar-demo";
+import ProfileForm from "@/components/profile-form";
 import SearchInput from "@/components/SearchInput";
 import {
 	Accordion,
@@ -66,6 +67,8 @@ export default function Home() {
 			<AlertDemoComponent />
 
 			<CalendarDemo />
+
+			<ProfileForm />
 		</main>
 	);
 }
