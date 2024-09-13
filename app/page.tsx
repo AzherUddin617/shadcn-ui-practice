@@ -1,4 +1,5 @@
 import { AlertDemoComponent } from "@/components/alert-demo";
+import { CalendarDemo } from "@/components/calendar-demo";
 import SearchInput from "@/components/SearchInput";
 import {
 	Accordion,
@@ -63,6 +64,8 @@ export default function Home() {
 			</Alert>
 
 			<AlertDemoComponent />
+
+			<CalendarDemo />
 		</main>
 	);
 }
