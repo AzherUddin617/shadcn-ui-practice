@@ -1,5 +1,6 @@
 import { AlertDemoComponent } from "@/components/alert-demo";
 import { CalendarDemo } from "@/components/calendar-demo";
+import { ProductTableComponent } from "@/components/product-table";
 import ProfileForm from "@/components/profile-form";
 import SearchInput from "@/components/SearchInput";
 import {
@@ -69,6 +70,8 @@ export default function Home() {
 			<CalendarDemo />
 
 			<ProfileForm />
+
+			<ProductTableComponent />
 		</main>
 	);
 }
