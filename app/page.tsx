@@ -1,3 +1,4 @@
+import { AlertDemoComponent } from "@/components/alert-demo";
 import SearchInput from "@/components/SearchInput";
 import {
 	Accordion,
@@ -5,12 +6,13 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
-import { Eye } from "lucide-react";
+import { Eye, Terminal } from "lucide-react";
 
 export default function Home() {
 	return (
-		<main className="h-screen flex flex-col gap-2 justify-center items-center">
+		<main className="min-h-screen flex flex-col gap-2 justify-center items-center py-10">
 			<form role="search">
 				<SearchInput />
 			</form>
@@ -50,6 +52,17 @@ export default function Home() {
 					</AccordionContent>
 				</AccordionItem>
 			</Accordion>
+
+			<Alert>
+				<Terminal className="h-4 w-4" />
+				<AlertTitle>Heads up!</AlertTitle>
+				<AlertDescription>
+					You can add components and dependencies to your app using
+					the cli.
+				</AlertDescription>
+			</Alert>
+
+			<AlertDemoComponent />
 		</main>
 	);
 }
